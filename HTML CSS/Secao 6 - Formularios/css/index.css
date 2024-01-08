@@ -1,0 +1,21 @@
+input,
+label{
+    display: block;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+body{
+    padding-bottom: 500px;
+}
+
+#login{
+    margin-top: 10px;
+}
+
+.radio label,
+.radio input{
+    display: inline-block;
+}

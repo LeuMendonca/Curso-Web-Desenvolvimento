@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <h2>Formulários HTML</h2>
+
+    <!-- Action direciona os dados do form para o arquivo que irá manipula-los-->
+    <!-- Method é qual a ação que será realizada sendo POST ou GET -->
+    <form action="register.php" method="POST"> 
+        <div>
+            <label>Nome: </label>
+            <input type="text">
+        </div>
+
+        <!-- 3 - Atributo Name -->
+        <div>
+            <!-- 4 - Atributo Label -->
+            <label for="idade">Idade:</label>
+            <input type="text" name="idade" >
+        </div>
+
+        <!-- 6 - Select -->
+        <div>
+            <label>Selecione a sua profissão:</label>
+            <select name="sexo" id="sexo">
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+            </select>
+        </div>
+
+        <!-- 7 - Atributo selected -->
+        <div>
+            <label>Carros:</label>
+        <select>
+            <option value="ford">Ford</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="volks">Volkswagen</option>
+        </select>
+        </div>
+
+        <!-- 8 - Multiplas Opções -->
+        <div>
+            <label>Adicionais:</label>
+            <select name="adicionais" id="adicionais" multiple>
+                <option value="ninho">Ninho</option>
+                <option value="leiteCondensado">Leite Condensando</option>
+                <option value="uva">Uva</option>
+                <option value="cremeNinho">Creme de Ninho</option>
+                <option value="morango">Morango</option>
+            </select>
+        </div>
+
+        <!-- 9 - Comentarios -->
+        <div>
+            <label for="comentario">Comentario:</label>
+            <textarea name="Comentario" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- 10 - Fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>Login</legend>
+                <label for="user">User:</label>
+                <input type="text" name="user">
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                
+                <input type="submit" value="Login" id="login">
+            </fieldset>
+        </div>
+
+        <!-- 11 - Datalist -->
+        <div>
+            <label for="sabor">Sabor</label>
+            <input type="text" list="flavor" id="sabor">
+
+            <datalist id="flavor">
+                <option value="Morango"></option>
+                <option value="Uva"></option>
+                <option value="Banana"></option>
+            </datalist>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+
+        <!-- 14 - input radio -->
+        <div>
+            <div class="radio">
+                <label for="carro">Carro:</label>
+                <input type="radio" name="veiculo" value="carro" checked>
+
+                <label for="moto">Moto:</label>
+                <input type="radio" name="veiculo" value="moto">
+            </div>
+        </div>
+
+        <!-- 15 - checkbox -->
+        <div>
+            <label for="opicionais">Opicionais:</label>
+
+            <div class="radio">
+                <input type="checkbox" name="individual" id="individual" value="individual">
+                <label for="individual">Individual</label>
+
+                <input type="checkbox" name="duplo" id="duplo" value="duplo">
+                <label for="duplo">Duplo</label>
+
+            </div>
+        </div>
+
+        <!-- 16 - Datas -->
+        <div>
+            <label for="aniversario">Data de Nascimento:</label>
+            <input type="date" name="aniversario" id="aniversario">
+        </div>
+
+        <!-- 17 - Arquivos -->
+        <div>
+            <label for="arquivos">Insira o seu arquivo:</label>
+            <input type="file" name="arquivos" id="">
+        </div>
+
+        <!-- 18 - Number -->
+        <div>
+            <label for="number">Digite um número:</label>
+            <input type="number" name="number" id="number">
+        </div>
+
+        <!-- 19 - Email -->
+        <div>
+            <label for="email">Digite o seu e-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- 20 - Value -->
+        <div>
+            <label for="cachorro">Nome do cachorro:</label>
+            <input type="text" name="cachorro" id="cachorro" value="Bob">
+        </div>
+
+        <!-- 21 - Disabled -->
+        <div>
+            <label for="valor">Tente digitar um valor:</label>
+            <input type="text" value="Esse value não é enviado ao formulario" disabled>
+        </div>
+
+        <!-- 22 - Profissão -->
+        <div>
+            <label for="profissao">Digite a sua profissão:</label>
+            <input type="text" name="profissao" id="profissao" placeholder="Ex:Gari,motoboy etc...">
+        </div>
+
+        <!-- 23 - Required -->
+        <div>
+            <label for="fruta">Digite sua fruta favorita:</label>
+            <input type="text" required>
+        </div>
+        <!-- 13 - Reset de formulario -->
+        <div>
+            <input type="reset" value="Limpar">
+        </div>
+        <!-- 5 - Envio de Formulario -->
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+
+</html>

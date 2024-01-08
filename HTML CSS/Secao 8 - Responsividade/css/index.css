@@ -1,0 +1,29 @@
+/* Media Query */
+/* Breakpoints mais utilizados
+    Abaixo de 600px : Celular
+    Entre 600px e 768px : tablet
+    entre 768px e 992 : mini laptops
+    Acima de 992: laptops e desktop
+*/
+
+@media screen and (max-width: 500px ){ /* Até 500px a cor do h1 será azul */
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width:800px){ /* Acima de 800px a cor do h1 será dourado */
+    h1{
+        color:gold
+    }
+}
+
+/* Landscape */
+h3 {
+    display: none;
+}
+@media screen and (orientation: landscape){
+    h3{
+        display: block;
+    }
+}

@@ -1,0 +1,142 @@
+body{
+    padding-bottom: 500px;
+}
+
+/* Flex */
+.flex{
+    display: flex;
+    /* Flex-direction */
+    flex-direction: column;
+}
+
+/* Wrap */
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 40px;
+    width: 30%;
+    border: 1px solid red;
+    margin-right: 1%;
+}
+
+/* Justify-content */
+.center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.center .box{
+    width: 50px;
+}
+
+
+/* Align Items */
+.align{
+    background-color: #d2F4a3;
+    border: 1px solid black;
+    height: 200px;
+    display: flex;
+    align-items: center; /* Centraliza no eixo Y */
+    justify-content: center; /* Centraliza no eixo X */ 
+}
+
+
+/* Gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    background-color: #32d4d7;
+    gap: 5px 10px; /* Espaçamento dos itens ( gap: 5px 10px ) é o mesmo que gap: y , x  */
+}
+
+.gap .box{
+    width: 30%;
+}
+
+
+/* Order: Escolhe a ordem dos filhos do flex*/
+.order{
+    display: flex;
+}
+
+#um { 
+    order: 1;
+}
+
+#dois { 
+    order: 2;
+}
+
+#tres{
+    order: 3;
+}
+
+/* Grow */
+.grow{
+    display: flex;
+}
+
+.grow .big{
+    flex: 2;
+}
+
+/* Basis: basis determina um tamanho para os elementos filhos e o flex-grow completa o width do componente setado até preencher toda a linha  */
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 150px;
+}
+
+.basis .big{
+    flex-grow: 2;
+}
+
+/* Shrink */
+.shrink {
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2;
+}
+
+/* shorthand */
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    flex: 1 1 250px;
+}
+
+.shorthand .diferente{
+    flex: 1 2 250px;
+}
+
+/* Auto Alinhamento */
+.auto-alinhamento{
+    height: 300px;
+    display: flex;
+    align-items: end;
+    border: 1px solid black;
+}
+
+.auto-alinhamento .diferente{
+    align-self: center; /* Faz um alinhamento diferente dos demais */
+}

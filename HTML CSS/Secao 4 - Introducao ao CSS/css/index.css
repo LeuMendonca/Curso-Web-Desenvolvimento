@@ -1,0 +1,427 @@
+body{
+    background-color: #F2F2F2;
+}
+
+h3{
+    font-size: 2em;
+    color: aquamarine;
+}
+
+
+/*Classes*/
+.paragraph{
+    background-color: black;
+    color: aqua ; 
+    padding: 7px;
+}
+
+/* Ids */
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* ordem das regras - ID > CLASS > TAG*/ 
+h2{
+    border-bottom: 1px solid red;
+}
+
+.titulo{
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 3px solid green;
+}
+
+/* Nome de cores */
+.color-name{
+    color:rgb(95, 187, 2);
+    background-color: black;
+    padding: 10px;
+}
+
+/* Hex */
+.hex{
+    color: #55eb55;
+}
+
+/* Hex Simplificado */
+.simple-hex{
+    color: #679; /* O hexadecimal 679 é o mesmo que 667799*/
+}
+
+/* rgb */
+.rgb{
+    color: rgb(255 , 0 , 0);
+}
+
+/* Rgba */
+.rgba{
+    color: #FFF;
+    background-color: rgb(255 , 0 , 0);
+    opacity: 0.3;
+}
+
+/* hsl */
+
+.hsl{
+    color: hsl(65, 60%, 41%);
+}
+
+/* Background */
+.bg{
+    background-color: #55eb55;
+}
+
+/* Opacity no background */
+
+.bg-opacity{
+    background-color: #55eb55;
+    opacity: 0.8;
+}
+
+.bg-opacity-rgba{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+
+/* Background Image */
+
+.insert-img{
+    background-image: url('../img/natal.avif');
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Centralização de Imagens */ 
+.nao-centralizada,
+.centralizada{
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/mar.avif");
+}
+
+.centralizada{
+    background-position: center;
+    background-size: cover;
+}
+
+/* Largura e Altura */
+.heigth-width{
+    height: 200px;
+    width: 200px;
+    background-color: #55eb55;
+}
+
+/* Padding */
+.padding,
+.not-padding{
+    background-color: #494949;
+}
+
+.padding{
+    padding: 2.5%;
+}
+
+/* Padding individual */
+.padding-individual{
+    background-color: black;
+    color: #FFF;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+/* shorthand-padding */
+.shorthand-padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #444;
+    padding: 20px 50px;
+
+    /* padding: 10px 50px 10px 50px; */
+}
+
+.use-borderbox{
+    background-color: #555;
+    width: 300px;
+    padding: 50px;
+}
+
+.not-use-borderbox{
+    background-color: orangered;
+    width: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Border */
+.border{
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+.border-2{
+    padding: 10px;
+    border: 1px groove blue;
+}
+
+/* Borda individual */
+.border-left{
+    border-left: 3px solid black;
+    padding: 5px;
+}
+
+.border-right{
+    width: 30%;
+    border-right: 3px solid black;
+    padding: 5px;
+}
+
+
+/* Arredondamento da borda */
+.arredondamento-borda{
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+/* Margin */
+.margin{
+    background-color: #55eb55;
+    padding: 10px;
+    margin: 15px;
+}
+
+.margin-top{
+    background-color: #555;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.margin-separada{
+    background-color: #555;
+    color: #FFF;
+    padding: 10px;
+    margin: 20px 30px 50px 70px;
+}
+
+
+/* Box Model Completo */
+.box-model{
+    background-color: chartreuse;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+}
+/* Align text */
+.alinhado-direita{
+    background-color: #368F74;
+    text-align: right;
+}
+
+.alinhado-centro{
+    background-color: #F23F68;
+    text-align: center;
+}
+
+/* Text Decoration */
+.texto-decorado{
+    color: black;
+    padding: 20px;
+    text-decoration: line-through;
+}
+
+.texto-decorado-2{
+    color: black;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.texto-decorado-3{
+    color: black;
+    padding: 20px;
+    text-decoration: overline;
+}
+
+/* Text Transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* Espaçamento de letras */
+.letter-spacing{
+    letter-spacing: 10px;
+}
+
+/* Fontes */
+.fontes{
+    font-family: fantasy;
+}
+
+.fontes-2{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos de Fontes */
+.estilo-fontes{
+    font-style: italic;
+}
+
+.estilo-fontes-2{
+    font-style: oblique;
+}
+
+.font-grossa{
+    font-weight: 900; /* Vai de 100 a 900*/
+}
+
+/* Font Sizy */
+.tamanho-fonte{
+    font-size: 30px;
+}
+
+/* Display */
+/* Inline-Block coloca os itens um a frente do outro */
+.inline-block{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #D2A366;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Block coloca os itens ocupando uma linha inteira */
+.block{
+    display: block;
+    background-color: #679;
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* None oculta o elemento */
+.ocultando-elemento{
+    display: none;
+}
+
+/* Static */
+.static{
+    position: static;
+    padding: 10px;
+    background-color: #87E6DD;
+    width: 100px;
+    height: 100px;
+}
+
+/* Position:relative */
+.relative{
+    position: relative;
+    padding: 10px;
+    background-color: #8666DD;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 30px;
+}
+
+/* Absolute */
+.absolute{
+    position: absolute;
+    padding: 10px;
+    background-color: #8666DD;
+    width: 100px;
+    height: 100px;
+    right: 2px;
+    top: 2px;
+}
+
+/* Absolute + Relative */ 
+
+.container-relabs{
+    width: 60%;
+    height: 100px;
+    background-color: #55eb55;
+    position: relative;
+}
+
+.item-absoluto{
+    width: 20%;
+    height: 65px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+}
+
+
+/* Position: fixed */ 
+.nav-fixed{
+    height: 80px;
+    background-color: #679;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Position Sticky */
+.sticky{
+    position: sticky;
+    right: 100px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #8666DD;
+    border: 1px solid black;
+}
+
+/* Z-Index */
+.container-zindex{
+    width: 450px;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.item-1,
+.item-2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.item-1{
+    z-index: 1;
+    background-color: #368F74;
+}
+
+.item-2{
+    background-color: #4785dd;
+    top: 10px;
+    left: 10px;
+}

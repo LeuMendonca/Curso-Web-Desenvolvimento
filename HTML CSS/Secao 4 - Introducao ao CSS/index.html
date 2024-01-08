@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- 3 - Internal CSS-->
+    <style>
+        p{
+            /*color: gold;*/
+            font-size: 40px;
+        }
+    </style>
+
+    <!-- 4 - External CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 6 - Multiplos CSS-->
+    <link rel="stylesheet" href="css/listas.css">
+</head>
+<body>
+
+    <!-- 1 - CSS Inline-->
+    <h1 style="color: red;">CSS alterado inline</h1>
+
+    <!-- 2 - Múltiplas Regras -->
+    <h1 style="color: red;font-size: 2em;padding-bottom: 30px ;border-bottom: 1px solid black;">CSS com multiplas regras</h1>
+
+    <!-- 3 - Internal CSS-->
+    <p>Eu fui estilizado pelo internal</p>
+    <p>Eu fui estilizado pelo internal</p>
+    <p>Eu fui estilizado pelo internal</p>
+
+    <!-- Position Sticky -->
+    <div class="sticky">
+        <span>Eu sou um stick</span>
+    </div>
+
+    <!-- 4 - External CSS-->
+    <h3>Titulo estilizado pelo external</h3>
+
+    <!-- 5 - Ordem do CSS -->
+    <p style="color: orangered">Ordem do css</p>
+
+    <!-- 6 - Multiplos CSS-->
+    <ul>
+        <li>Gol</li>
+        <li>Palio</li>
+        <li>Sandero</li>
+    </ul>
+
+    <!-- 8 - Classes -->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Algum texto2</p>
+    <p class="paragraph">Algum texto3</p>
+
+    <!-- 9 - id-->
+    <h1 id="exclusive-title">Titulo exclusivo com ID</h1>
+
+    <!-- 10 - Multiplas regras , ordem do css-->
+    <h2 id="algum-titulo" class="titulo">Algum texto</h2>
+    <h2 class="titulo">Algum texto2</h2>
+    <h2>Algum texto2</h2>
+
+    <!-- 11 - Nome de cor-->
+    <p class="color-name">Qualquer texto para nome de cores</p>
+
+    <!-- 12 - Hexadecimal -->
+    <p class="hex">Paragrafo com hex</p>
+
+    <!-- 13 - Mais sobre hex -->
+    <p class="simple-hex">Hex simplificado</p>
+
+    <!-- 14 - rgb -->
+    <p class="rgb">Estilizado com rgb</p>
+
+    <!-- 15 - rgba -->
+    <p class="rgba">Estilizando com rgba</p>
+
+    <!-- 16 - HSL -->
+    <p class="hsl">Estilizando com hsl</p>
+
+    <!-- 17 - Background -->
+    <p class="bg">Mude o meu background</p>
+
+    <!-- 18 - Opacidade no background-->
+    <div class="bg-opacity">
+        <p>Estou aqui</p>
+    </div>
+
+    <!-- 19 - Rgba com opacidade -->
+    <div class="bg-opacity-rgba">
+        <p>Alterado com RGBA a opacidade</p>
+    </div>
+
+    <!-- Background Image -->
+    <div class="insert-img">
+        <p>Feliz Natal</p>
+    </div>
+
+    <!-- Centralização de Imagens-->
+    <div class="nao-centralizada"></div>
+    <div class="centralizada"></div>
+
+    <!-- Heigth and Width-->
+    <div class="heigth-width"></div>
+
+    <!-- Padding -->
+    <div class="padding">Possui padding</div>
+    <div class="not-padding">Não possui padding</div>
+
+    <!-- Padding Individual-->
+    <p class="padding-individual">Este elemento tem paddings diferentes</p>
+
+    <!-- Shorthand padding-->
+    <p class="shorthand-padding">Shorthand padding</p>
+    <p class="shorthand-padding-2">Shorthand padding 2</p>
+
+    <!-- Border-box: Box sizing-->
+    <div  class="use-borderbox">
+        <p>Alguma coisa</p>
+    </div>
+
+    <div  class="not-use-borderbox">
+        <p>Alguma coisa sem border box</p>
+    </div>
+    
+    <!-- Border -->
+    <p class="border">borda 1</p>
+    <p class="border-2">borda 2</p>
+
+    <!-- Border Individual -->
+    <p class="border-left">Borda left</p>
+    <p class="border-right">Borda right</p>
+
+    <!-- Arredondamento de Borda -->
+    <div class="arredondamento-borda">
+        <p>Borda arredondada</p>
+    </div>
+
+    <!-- Margin-->
+    <div class="margin"><p>Margem completa</p></div>
+    <div class="margin-top"><p>Margem top</p></div>
+    <div class="margin-separada"><p>Margem separadas</p></div>
+
+    <!-- Box Model -->
+    <div class="box-model">
+        <p>Tenho todas as propriedades do box model</p>
+=======
+    <!-- Text-align -->
+    <p class="alinhado-direita">Texto alinhado a direita</p>
+    <p class="alinhado-centro">Texto alinhado ao centro</p>
+
+    <!-- Text Decoration -->
+    <p class="texto-decorado">Texto decorado</p>
+    <p class="texto-decorado-2">Texto decorado 2</p>
+    <p class="texto-decorado-3">Texto decorado 3</p>
+
+    <!-- Text transform -->
+    <p class="upper">Texto em caixa alta</p>
+    <p class="lower">Texto em caixa baixa</p>
+    <p class="capitalize">Texto em capitalize</p>
+
+    <!-- Espaçamento de letras -->
+    <p class="letter-spacing">Espaçando letras</p>
+
+    <!-- Fontes -->
+    <p class="fontes">Alterando a fonte</p>
+    <p class="fontes-2">Alterando a fonte 2</p>
+
+    <!-- Estilos de Fontes -->
+    <p class="estilo-fontes">Estilos de fontes</p>
+    <p class="estilo-fontes-2">Estilos de fontes 2</p>
+
+    <!-- Estilo de Fontes Weigth-->
+    <p class="font-grossa">Alterando grossura da fonte</p>
+
+    <!-- Font Size -->
+    <p class="tamanho-fonte">Alterando tamanho da fonte</p>
+
+    <!-- Display Inline-block -->
+    <!-- O padrão das divs é display:block -->
+
+    <div class="inline-block">Texto teste display</div> 
+    <div class="inline-block">Texto teste display</div>
+    <div class="inline-block">Texto teste display</div>
+
+    <!-- Display Block -->
+    <!-- O padrão do span é display:inline-block -->
+    <span class="block">Texto como teste block</span>
+    <span class="block">Texto como teste block</span>
+    <span class="block">Texto como teste block</span>
+
+    <!-- Display None-->
+    <!-- Ocultando elementos-->
+    <p>Estou visivel</p>
+    <p class="ocultando-elemento">Estou invisivel</p>
+
+    <!-- Static  -->
+    <div class="static">
+        <span>Eu sou estatico</span>
+    </div>
+
+    <!-- Position Relative  -->
+    <div class="relative">
+        <span>Eu sou relativo</span> <!-- Ao usar o position relative , poderá ocorrer problema de sobreposição , por isso não é recomendado usar o relative -->
+    </div>
+    <p>Sou um paragrafo</p>
+
+    <!-- Position Absolute  -->
+    <div class="absolute">
+        <span>Eu sou absoluto</span>
+    </div>
+    <p>Eu sou um paragrafo</p>
+
+    <!--Position relative com absolute-->
+    <div class="container-relabs">
+        <div class="item-absoluto"><span>Eu sou absoluto</span></div>
+    </div>
+
+    <!-- Position fixed -->
+    <div class="nav-fixed">
+        <span>Eu sou uma bonita barra de navegação</span>
+    </div>
+
+    <!-- Z-index -->
+    <div class="container-zindex">
+        <div class="item-1"><span>Item 1</span></div>
+        <div class="item-2"><span>Item 2</span></div>
+    </div>
+</body>
+</html>

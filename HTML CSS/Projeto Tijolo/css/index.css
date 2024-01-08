@@ -1,0 +1,199 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/* Navbar */
+.nav {
+    background-color: #f9d5a3;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.lista-opcoes{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 15px;
+}
+
+.lista-opcoes a{
+    text-decoration: none;
+    color: #434649;
+}
+
+.lista-opcoes a:hover{
+    color: #000;
+}
+
+#logo-nav {
+    width: 100px;
+    height: 70px;
+}
+
+.btn-comprar {
+    background-color: #ff8830;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #cbdcdf;
+    transition: 0.5;
+}
+
+.btn-comprar:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+/* Banner de tijolos */
+.banner-tijolos {
+    width: 100%;
+}
+
+.banner-tijolos img{
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-tijolos {
+    background-image: url('../img/wallpaper_tijolos.jpg');
+    height: 460px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.banner-tijolos h2 {
+    margin-bottom: 35px;
+}
+
+.main-title{
+    font-size: 93px;
+}
+
+/* Serviços */
+.fa-truck-pickup,
+.fa-award,
+.fa-envelope{
+    font-size:72px;
+}
+
+.fa-truck-pickup {
+    color: #ff8830;
+}
+
+.fa-envelope{
+    color: #33b7dc;
+}
+
+.fa-award {
+    color: #0aa367;
+}
+
+.list-services{
+    margin-top: 60px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0 35px 0;
+    color: #434649;
+    margin-bottom: 50px;
+}
+
+.list-services li h2 , i{
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+
+/* Contato */
+.form-contato {
+    padding: 0 10px;
+    background-color: #f9d5a3;
+    padding: 25px;
+}
+
+.form-contato form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato label {
+    display: block;
+    width: 100%;
+}
+
+.form-contato input,
+.form-contato textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.form-contato textarea {
+    height: 120px;
+}
+
+.form-contato label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-contato .campo-form input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.btn-form{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 35%;
+    width: 100%;
+    justify-content: end;
+    border: none;
+}
+
+.btn-form input[type="submit"],
+.btn-form input[type="reset"]{
+    border: none;
+    cursor: pointer;
+    background-color: #ff8830;
+    color: #f2f2f2;
+    border-radius: 3px;
+    width: 25%;
+}
+
+.btn-form input[type="submit"]:hover,
+.btn-form input[type="reset"]:hover{
+    background-color: #fd9240;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 15px 0;
+}
