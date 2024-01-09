@@ -48,7 +48,7 @@ console.log(pessoa.nome)
 console.log(pessoa.idade)
 console.log(pessoa.profissao)
 
-// Criando e deletando propriedades
+// 6 - Criando e deletando propriedades
 const carro = {
     motor: 2.0,
     marca: "Fiat",
@@ -62,3 +62,78 @@ console.log(carro)
 
 delete carro.km
 console.log(carro)
+
+
+// 7 - Mais sobre objetos
+const obj = {
+    a: "teste",
+    b: true
+}
+
+console.log(obj instanceof Object)
+
+const obj2 = {
+    c: []
+}
+
+Object.assign(obj2 , obj) // Com assign conseguimos pegar as propriedades de obj e colocar em obj2
+
+console.log(obj2)
+
+// 8 - Conhecendo melhor os objetos
+console.log(Object.keys(obj)) // Com keys conseguimos uma lista com as propriedades do objeto
+console.log(Object.keys(obj2))
+
+console.log(Object.entries(carro))
+
+// 9 - Mutação
+const objNome = {
+    nome: "Leonardo"
+}
+
+const objLeo = objNome
+
+console.log(objLeo) 
+
+objNome.sobrenome = "Mendonça" // Ao adicionarmos uma propriedade o objeto mutação também recebe essa propriedade.
+
+console.log(objLeo)
+
+delete objLeo.sobrenome // Deletar o objeto mutante irá deletar o objeto raiz
+
+console.log(objNome)
+console.log(objLeo)
+
+
+// 10 - Loop em array
+const usuarios = ["Leonardo" , "Francisco" , "Laís" , "Renato"]
+
+for(let c = 0 ; c < usuarios.length ; c++){
+    console.log(usuarios[c])
+}
+
+// 11 - Push e ePop
+// Push adiciona um elemento ao fim da lista
+// Pop remove o ultimo elemento da lista
+
+const letras = [ "a" , "b" , "c"]
+letras.push("d","e","f")
+
+console.log(letras)
+
+letras.pop()
+console.log(letras)
+
+const itemRemovido = letras.pop() // Pop também retorna o item removido 
+console.log(itemRemovido)
+
+// 12 - shift e unshift
+// Shift remove o primeiro item da lista
+// unshift adiciona ao primeiro index da lista
+
+const numbers = [ 1 , 2 , 3 , 4]
+console.log(numbers.shift()) // Mostrando qual elemento foi excluido
+console.log(numbers)
+
+numbers.unshift(1) // Retornando 1 para lista
+console.log(numbers)
