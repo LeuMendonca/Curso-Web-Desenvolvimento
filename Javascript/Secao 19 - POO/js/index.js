@@ -222,3 +222,30 @@ console.log(new Gato("Francesinho" , "Siames") instanceof Ovelha) // Objeto de g
 
 
 // 16 - Concluindo Projeto...
+class PessoaFisica{
+    constructor(nome , idade , cpf, sexo){
+        this.nome = nome
+        this.idade = idade
+        this.cpf = cpf
+        this.sexo = sexo || PessoaFisica.prototype.sexo
+    }
+    
+    falar(){
+        console.log(`Pessoa ${this.nome} está a falar...`)
+    }
+}
+
+class FuncionarioEmpresa extends PessoaFisica{
+    constructor(nome,idade,cpf,sexo,cargo,salario){
+        super(nome,idade,cpf,sexo)
+        this.cargo = cargo
+        this.salario = salario
+    }
+}
+
+PessoaFisica.prototype.sexo = "Não definido"
+
+const funcionario1 = new FuncionarioEmpresa("Leonardo" , 22 , 14259057650 ,sexo="", "Programador" , 1800)
+console.log(funcionario1)
+console.log(funcionario1.sexo)
+
