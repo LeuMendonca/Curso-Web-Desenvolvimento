@@ -194,3 +194,31 @@ console.log(produto1.getDescricao)
 console.log(produto1.getValor)
 produto1.setValor = 8.65 // Alterando valor pelo setter
 console.log(produto1.getValor)
+
+
+// 14 - Herança
+class Mamifero{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+
+class Ovelha extends Mamifero{
+    constructor(nome,patas){
+        super(patas,patas)
+        this.nome = nome
+    }
+}
+
+const tutuba = new Ovelha("Lucas" , 4)
+console.log(tutuba)
+
+// 15 - instanceof
+console.log(tutuba instanceof Ovelha) // Objeto é instancia de Mamifero ? Sim
+console.log(Ovelha instanceof Mamifero) // False , pois a classe ovelha não é instancia da classe mamifero
+
+console.log(new Ovelha("Limbo" , 4) instanceof Mamifero) // Objeto é instancia de Mamifero ? Sim
+console.log(new Gato("Francesinho" , "Siames") instanceof Ovelha) // Objeto de gato não é instanciado de Ovelha
+
+
+// 16 - Concluindo Projeto...
