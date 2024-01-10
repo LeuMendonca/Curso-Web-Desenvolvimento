@@ -108,3 +108,89 @@ const contrato1 = new Contrato(2000,"Josemar Mendonça","2023-01-09","2023-01-15
 console.log(contrato1)
 
 console.log(Contrato.prototype)
+
+// 10 - Mais sobre classes
+class Funcionario{
+    constructor(nome_completo , idade , salario , cargo){
+        this.nome_completo = nome_completo
+        this.idade = idade
+        this.salario = salario
+        this.cargo = cargo
+    }
+
+    getNome(){
+        console.log(`Funcionario: ${this.nome_completo}`)
+    }
+}
+
+const f1 = new Funcionario("Leonardo Mendonça" , 22 , 1800 , "Programador")
+f1.getNome()
+
+// override
+class Humano{
+    constructor(nome,idade){
+        this.nome = nome
+        this.idade = idade
+    }
+}
+
+const leonardo = new Humano("Leonardo" , 22)
+
+Humano.prototype.idade = "Não definida"
+
+console.log(leonardo.idade)
+console.log(Humano.prototype.idade)
+
+// 12 - Symbol
+class Gato{
+    constructor(nome , raca){
+        this.nome = nome
+        this.raca = raca
+    }
+}
+
+// Todo gato tem 4 patas então definimos da seguinte forma
+const patas = Symbol()
+Gato.prototype["patas"] = 4
+
+// Todo gato come raçao
+const alimento = Symbol()
+Gato.prototype["alimento"] = "Ração"
+
+const gatinho1 = new Gato("Alfredo" , "Siamês")
+console.log(gatinho1.patas) // Resultado é 4
+console.log(gatinho1.alimento) // Resultado é Ração
+
+// 13 - Getter e Setter
+
+class Produto{
+    constructor(descricao , valor){
+        this.descricao = descricao
+        this.valor = valor
+    }
+
+    get getDescricao(){
+        return this.descricao
+    }
+
+    set setDescricao(newDescricao){
+        this.descricao = newDescricao
+    }
+
+    get getValor(){
+        return this.valor
+    }
+
+    set setValor(newValor){
+        this.valor = newValor
+    }
+}
+
+const produto1 = new Produto("Leite Condensado" , 6.99)
+console.log(produto1.getDescricao)
+produto1.setDescricao = "Leite Condensado v2" // Alterando descrição do produto via setter
+console.log(produto1.getDescricao)
+
+console.log(produto1.getValor)
+produto1.setValor = 8.65 // Alterando valor pelo setter
+console.log(produto1.getValor)
