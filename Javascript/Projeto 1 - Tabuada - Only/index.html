@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Digite o número e confirme para gerar uma tabuada</h1>
+        </header>
+
+        <section class="container-tabuada">
+            <div class="container-box">
+                <div class="box-number">
+                    <p>Tabuada do:</p>
+                    <input type="number" name="numeroTabuada" id="numeroTabuada" min="1">
+                </div>
+
+                <div class="box-number">
+                    <p>Multiplicar até:</p>
+                    <input type="number" name="numeroAte" id="numeroAte" min="1">
+                </div>
+            </div>
+
+            <div id="box-button">
+                <button class="button-calc">Calcular</button>
+            </div>
+        </section>
+
+        <section id="titulo-resultados">
+            <h2 id="informativo">Tabuada do número:</h2>
+        </section>
+
+        <section class="container-resultado">
+
+            <div class="resultados">
+                <div class="div-resultados">
+                    <p>Informe um número para calcular uma tabuada...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
