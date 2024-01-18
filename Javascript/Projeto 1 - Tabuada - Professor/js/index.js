@@ -26,6 +26,9 @@ const createTable = ( number , mult ) => {
 
         multiplicationTable.append(row)
     }
+
+    const spanTitle = document.querySelector("#multiplication-title span")
+    spanTitle.innerText = number
 }
 // Eventos
 multiplicationForm.addEventListener("submit" , (e) => {
