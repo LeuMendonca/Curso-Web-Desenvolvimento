@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+
+
+#main-container {
+    padding: 25px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid #333;
+    padding: 25px;
+    background-color: #318ce0;
+    color: #FFF;
+}
+
+.container h1 {
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+#form-imc .row label,
+#form-imc .row input{
+    display: block;
+    width: 100%;
+}
+
+#form-imc .row label:focus,
+#form-imc .row input:focus {
+    outline: none;
+}
+
+#form-imc .row input {
+    padding: 10px;
+    border: none;
+    background-color: #f7f3f3;
+    border-bottom: 1px solid black;
+}
+
+.row-buttons{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.btn {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: .9;
+    transition: .5s;
+}
+
+.row-buttons .btn:hover{
+    opacity: 1;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.row-buttons .calcular {
+    background-color: #f02222;
+    border: 1px solid #f02222;
+}
+
+.row-buttons .resetar {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+
+/* Outro lado da moeda */
+.info-imc {
+    text-align: center;
+}
+
+.info-imc span {
+    color: rgb(238, 65, 65);
+}
+
+#situacao-atual {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.6em;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+/* Tablea */
+#tabela-resultado{
+    width: 100%;
+}
+
+tr {
+    width: 100%
+}
+
+.row-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}

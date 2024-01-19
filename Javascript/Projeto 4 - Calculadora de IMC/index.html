@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <main id="main-container">
+      <div class="container">
+        <div id="container-info">
+          <h1 id="title">Calculadora de IMC</h1>
+
+          <div class="info-imc">
+            <h1>Seu IMC: <span id="res-imc">26.1</span></h1>
+
+            <p id="situacao-atual">Situação atual: <span id="situacao-imc">Obesidade</span></p>
+
+            <h3>Confira as classificações</h3>
+
+            <table id="tabela-resultado">
+                <thead id="head-table">
+                    <tr class="row-table">
+                        <td id="dados-table">IMC</td>
+                        <td id="dados-table">Classificação</td>
+                        <td id="dados-table">Obesidade</td>
+                    </tr>
+                </thead>
+
+                <tbody id="body-table">
+                    <tr  class="row-table">
+                        <td id="dados-table">Menor que 18,5</td>
+                        <td id="dados-table">Magreza</td>
+                        <td id="dados-table">0</td>
+                    </tr>
+
+                    <tr  class="row-table">
+                        <td id="dados-table">Menor que 18,5</td>
+                        <td id="dados-table">Magreza</td>
+                        <td id="dados-table">0</td>
+                    </tr>
+
+                    <tr  class="row-table">
+                        <td id="dados-table">Menor que 18,5</td>
+                        <td id="dados-table">Magreza</td>
+                        <td id="dados-table">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button id="voltar" class="btn">Voltar</button>
+          </div>
+
+<!-- 
+          <form id="form-imc">
+            <div class="row">
+              <label for="heigth">Altura:</label>
+              <input type="text" id="heigth" placeholder="Exemplo: 1,75" />
+            </div>
+
+            <div class="row">
+              <label for="weigth">Peso:</label>
+              <input type="text" id="weigth" placeholder="Exemplo: 70,6" />
+            </div>
+
+            <div class="row-buttons">
+              <input type="submit" value="Calcular" class="btn calcular" />
+              <input type="reset" value="Limpar" class="btn resetar" />
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
