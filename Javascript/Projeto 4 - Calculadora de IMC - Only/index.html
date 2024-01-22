@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <main id="conteudo-principal">
+        <div id="container">
+            <form id="form-imc">
+                <h2 id="title">Calculadora de IMC</h2>
+
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" placeholder="Exemplo: 1,75">
+
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" placeholder="Exemplo: 70">
+
+                <div id="botoes">
+                    <input type="submit" value="Calcular" id="btn-calcular" class="btn">
+                    <input type="reset" value="Limpar" id="btn-resetar" class="btn">
+                </div>
+            </form>
+
+            <div id="info-imc" class="not-exibir">
+                <h4 id="title">Seu IMC: <span id="valor-imc"></span></h4>
+                
+                <p>Situação atual: <span id="situacao-atual"></span></p>
+            
+                <h4 id="subtitle">Confira as classificações</h3>
+            
+                <div class="classificacoes">
+                    <table id="table-info">
+                        <thead id="table-head">
+                            <tr class="table-row">
+                                <td class="table-dados">IMC</td>
+                                <td class="table-dados">Classificações</td>
+                                <td class="table-dados">Obesidade</td>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="table-dados">Menor que 18,5</td>
+                                <td class="table-dados">Magreza</td>
+                                <td class="table-dados">0</td>
+                            </tr>
+            
+                            <tr class="table-row">
+                                <td class="table-dados">Entre 18,5 e 24,9</td>
+                                <td class="table-dados">Normal</td>
+                                <td class="table-dados">0</td>
+                            </tr>
+            
+                            <tr class="table-row">
+                                <td class="table-dados">Entre 25,0 e 29,9</td>
+                                <td class="table-dados">Sobrepeso</td>
+                                <td class="table-dados">I</td>
+                            </tr> 
+            
+                            <tr class="table-row">
+                                <td class="table-dados">Entre 30,0 e 39,9</td>
+                                <td class="table-dados">Obesidade</td>
+                                <td class="table-dados">II</td>
+                            </tr>
+            
+                            <tr class="table-row">
+                                <td class="table-dados">Maior que 40,0</td>
+                                <td class="table-dados">Obesidade grave</td>
+                                <td class="table-dados">III</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button id="voltarIMC" class="btn">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

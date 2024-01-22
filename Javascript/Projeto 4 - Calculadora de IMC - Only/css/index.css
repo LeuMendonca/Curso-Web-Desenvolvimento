@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container{
+    background-color: #0c70f3;
+    padding: 25px;
+}
+
+#form-imc #title{
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#form-imc input ,
+#form-imc label {
+    display: block;
+    width: 100%;
+}
+
+#form-imc input[type="text"] {
+    margin-bottom: 15px;
+    padding: 7px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+#form-imc input[type="text"]::placeholder{
+    color: #c4c4c4;
+}
+
+#form-imc input[type="text"]:focus{
+    outline: none;
+}
+
+#botoes {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#botoes input {
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#botoes #btn-calcular{
+    background-color: rgb(250, 63, 63);
+}
+
+#botoes #btn-resetar {
+    background-color: #333;
+}
+
+
+/* Verso */
+#info-imc {
+    text-align: center;
+}
+
+#info-imc #title {
+    font-size: 1.9em;
+    margin-bottom: 10px;
+}
+
+#info-imc p{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+#info-imc span {
+    color: rgb(255, 106, 6);
+}
+
+#info-imc #subtitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#table-info {
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+
+.table-row {
+    border-bottom: 1px solid black ;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.table-dados {
+    padding: 7px;
+}
+
+#info-imc button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgb(250, 63, 63);
+}
+
+.not-exibir {
+    display: none;
+    transition: .3s;
+}
+
+.error {
+    border: 1px solid #fc3434;
+    background-color:#ff5555 ;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    transition: 1.3s;
+}
