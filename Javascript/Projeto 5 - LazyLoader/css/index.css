@@ -42,3 +42,19 @@ body{
     color: #FFF;
     font-weight: bold;
 }
+  
+.box-animation {
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 5px;
+    color: #444;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s , transform 3s;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
