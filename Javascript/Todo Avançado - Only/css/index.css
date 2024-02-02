@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+
+body{
+    background-image: url(../img/uma-pintura-de-um-lago-de-montanha-com-uma-montanha-ao-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FDFDFD;      
+    max-width: 500px;
+    padding: 2rem;
+    width: 680px;
+}
+
+.form-control input[type="text"]{
+    padding: .5rem .8rem;
+    width: 100%;
+}
+
+.form-control{
+    display: flex;
+    gap: 10px;
+
+}
+
+.container header h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.7rem;
+}
+
+form {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.control-buttons button{
+    padding: .3rem .6rem;
+    margin-left: 5px;
+}
