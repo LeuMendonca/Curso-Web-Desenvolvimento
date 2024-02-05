@@ -11,7 +11,7 @@ function App() {
   const [ produtos , setProdutos ] = useState([])
 
   // 4 - custom hook
-  const { data: items , httpConfig } = useFetch( urlAPI )
+  const { data: items , httpConfig , loading ,error } = useFetch( urlAPI )
 
   // useEffect( () => {
 
@@ -62,6 +62,17 @@ function App() {
     <>
       <h1>HTTP em React</h1>
 
+      {/* 6 - Loading */}
+      { loading &&
+        <p>Carregando</p>  
+      }
+
+      {
+        // 7 - Tratando erro
+        error && <p>{ error }</p>
+      }
+
+      {/* 1 - resgate de dados */}
       { items && 
         items.map( ( produto ) => (
           <ul>
@@ -82,7 +93,8 @@ function App() {
             <input type="text" value={ price } onChange={ ( e ) => setPrice( e.target.value )}/>
           </label>
 
-          <input type="submit" value="Enviar" />
+          { loading ? <input type="submit" value="Aguarde..." disabled /> : <input type="submit" value="Criar"  />}
+            
         </form>
       </div>
     </>

@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #414141;
+    padding: 1rem 2rem;
+    margin: .5rem;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+.done {
+    opacity: .5;
+}
